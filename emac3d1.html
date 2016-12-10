@@ -73,15 +73,15 @@
 <body>
 
 <!--<div id="main">-->
-    <!--<div id="body" class="light">-->
-        <!--<div id="content" class="show">-->
-            <!--<div class="demo">-->
-                <!--<div id="stage" class="stage_area">-->
-                    <!--<div id="container" class="container"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
+<!--<div id="body" class="light">-->
+<!--<div id="content" class="show">-->
+<!--<div class="demo">-->
+<!--<div id="stage" class="stage_area">-->
+<!--<div id="container" class="container"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 <!--</div>-->
 <div id="stage" class="stage_area">
     <div id="container" class="container"></div>
@@ -112,15 +112,10 @@
                     };
 
             // 显示图片
-            var htmlPic = '', arrayPic = [1, 2, 3, 4, 6, 7, 4, 9, 10], rotate = 360 / arrayPic.length;
-//            var htmlPic = '', arrayPic = [1, 8, 3, 4, 6, 7, 10, 13, 15], rotate = 360 / arrayPic.length;
-
+            var htmlPic = '', arrayPic = [1, 8, 3, 4, 6, 7, 10, 13, 15], rotate = 360 / arrayPic.length;
 
             arrayPic.forEach(function(i) {
-
-                 htmlPic = htmlPic + '<img id="piece'+ i +'" src="https://wujianxing.github.io/jiangzhiming/img/'+ i +'.JPG" class="piece" />';
-
-//                htmlPic = htmlPic + '<img id="piece'+ i +'" src="http://image.zhangxinxu.com/image/study/s/s128/mm'+ i +'.jpg" class="piece" />';
+                htmlPic = htmlPic + '<img id="piece'+ i +'" src="http://image.zhangxinxu.com/image/study/s/s128/mm'+ i +'.jpg" class="piece" />';
             });
 
             // 元素

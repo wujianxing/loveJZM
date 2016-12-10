@@ -3,9 +3,12 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-    <meta name="author" content=" " />
-    <title>CSS3 transform 3D</title>
+    <meta http-equiv="description" content="CSS3 transform实现图片旋转木马3D浏览效果 » 张鑫旭-鑫空间-鑫生活" />
+    <meta name="description" content="张鑫旭web前端学习实例页面 CSS3 transform实现图片旋转木马3D浏览效果" />
+    <meta name="keywords" content="CSS3, 3D, translateZ, perspective" />
+    <meta name="author" content="张鑫旭, zhangxixnu" />
+    <title>CSS3 transform实现图片旋转木马3D浏览效果 » 张鑫旭-鑫空间-鑫生活</title>
+    <link rel="stylesheet" href="../css/demo.css" type="text/css" />
     <style>
         .stage_area {
             width: 900px;
@@ -71,22 +74,32 @@
 </head>
 
 <body>
-
-<!--<div id="main">-->
-    <!--<div id="body" class="light">-->
-        <!--<div id="content" class="show">-->
-            <!--<div class="demo">-->
-                <!--<div id="stage" class="stage_area">-->
-                    <!--<div id="container" class="container"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-<div id="stage" class="stage_area">
-    <div id="container" class="container"></div>
+<div id="header">
+    <a href="http://www.zhangxinxu.com/" class="logo" title="回到鑫空间-鑫生活首页">
+        <img src="http://www.zhangxinxu.com/php/image/zxx_home_logo.png" border="0" />
+    </a>
+</div>
+<div id="main">
+    <h1>CSS3 transform实现图片旋转木马3D浏览效果实例页面</h1>
+    <div id="body" class="light">
+        <div id="content" class="show">
+            <h3>展示（可以使用iPad等访问）</h3>
+            <div class="article_new"><a href="http://www.zhangxinxu.com/wordpress/?p=2592">回到相关文章 »</a></div>
+            <div class="demo">
+                <div id="stage" class="stage_area">
+                    <strong class="remind">点击任意图片浏览：</strong>
+                    <div id="container" class="container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
+<div id="footer">
+    Designed &amp; Powerd by <a href="http://www.zhangxinxu.com/">zhangxinxu</a><br />
+    Copyright© 张鑫旭-鑫空间-鑫生活<br>
+    <a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备09015569号</a>
+</div>
 
 <script>
     (function() {
@@ -112,15 +125,10 @@
                     };
 
             // 显示图片
-            var htmlPic = '', arrayPic = [1, 2, 3, 4, 6, 7, 4, 9, 10], rotate = 360 / arrayPic.length;
-//            var htmlPic = '', arrayPic = [1, 8, 3, 4, 6, 7, 10, 13, 15], rotate = 360 / arrayPic.length;
-
+            var htmlPic = '', arrayPic = [1, 8, 3, 4, 6, 7, 10, 13, 15], rotate = 360 / arrayPic.length;
 
             arrayPic.forEach(function(i) {
-
-                 htmlPic = htmlPic + '<img id="piece'+ i +'" src="https://wujianxing.github.io/jiangzhiming/img/'+ i +'.JPG" class="piece" />';
-
-//                htmlPic = htmlPic + '<img id="piece'+ i +'" src="http://image.zhangxinxu.com/image/study/s/s128/mm'+ i +'.jpg" class="piece" />';
+                htmlPic = htmlPic + '<img id="piece'+ i +'" src="http://image.zhangxinxu.com/image/study/s/s128/mm'+ i +'.jpg" class="piece" />';
             });
 
             // 元素
@@ -136,6 +144,9 @@
             arrayPic.forEach(function(i, j) {
                 transform($("#piece" + i), "rotateY("+ j * rotate +"deg) translateZ("+ (transZ + 20) +"px)");
             });
+
+
+
 
 
             // 垂直位置居中 - Chrome浏览器
@@ -172,6 +183,21 @@
     })();
 </script>
 
+<div id="ad">
+    <script type="text/javascript">	google_ad_client = "pub-0090627341039040";google_ad_slot = "2041257798";google_ad_width = 468;google_ad_height = 60;</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-11205167-1']);
+        _gaq.push(['_trackPageview']);
 
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</div>
 </body>
 </html>
