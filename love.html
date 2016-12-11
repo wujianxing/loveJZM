@@ -180,8 +180,10 @@
         }));
 
         var textAnimate = eval(Jscex.compile("async", function () {
+            $await(Jscex.Async.sleep(3000));
+
             var together = new Date();
-            together.setFullYear(2016,10,26); 			//时间年月日
+            together.setFullYear(2016,10,24); 			//时间年月日
             together.setHours(0);						//小时
             together.setMinutes(0);					//分钟
             together.setSeconds(0);					//秒前一位
@@ -200,10 +202,9 @@
             $await(growAnimate());
             $await(flowAnimate());
             $await(moveAnimate());
-
             textAnimate().start();
-
             $await(jumpAnimate());
+
         }));
         runAsync().start();
     })();
