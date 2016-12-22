@@ -3,7 +3,9 @@
     width: 140px;
     height: 115px;
 }
-#heart2{
+.heart2{
+    width: 130px;
+    height: 110px;
     position: relative;
 }
 .heart::before, .heart::after,.heart::after,.heart::after {
@@ -36,30 +38,45 @@
     transform-origin: right bottom;
 }
 
-.heart::aftern {
+
+.heart {
+    -webkit-animation: jump 1s infinite ease-out;
+    -moz-animation: jump 1s infinite ease-out;
+    -o-animation: jump 1s infinite ease-out;
+    animation: jump 1s infinite ease-out;
+}
+.heart2::before, .heart2::after,.heart2::after,.heart2::after {
+    content:"";
+    position: absolute;
+    left: 70px;
+    top: 0;
+    width: 70px;
+    height: 115px;
+    background: #ff5a99;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+.heart2::after {
     left: 0;
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    transform: rotate(135deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
     -webkit-transform-origin: right bottom;
     -moz-transform-origin: right bottom;
     -o-transform-origin: right bottom;
     transform-origin: right bottom;
 }
 
-.heart::after3 {
-    left: 0;
-    -webkit-transform: rotate(225deg);
-    -moz-transform: rotate(225deg);
-    -o-transform: rotate(225deg);
-    transform: rotate(225deg);
-    -webkit-transform-origin: right bottom;
-    -moz-transform-origin: right bottom;
-    -o-transform-origin: right bottom;
-    transform-origin: right bottom;
-}
-.heart {
+
+.heart2 {
     -webkit-animation: jump 1s infinite ease-out;
     -moz-animation: jump 1s infinite ease-out;
     -o-animation: jump 1s infinite ease-out;
