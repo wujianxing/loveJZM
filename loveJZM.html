@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
 <style type="text/css">
     <!--
-    .STYLE1 {color: #ff0000	}
+    .STYLE1 {color: lawngreen	}
 
     body {
         background-image: url("img/background.jpg");
@@ -351,26 +351,29 @@
             <div id="code">
                 <p id="codep">
                     <font color="#00CED1">
-                        <span class="say">最爱的小酱紫,我爱你</span><br>
+                        <span class="say">酱紫,媳妇,小可爱,我爱你!</span><br>
                         <span class="say"> </span><br>
-                        <span class="say"> 你是我心中的小太阳,</span><br>
-                        <span class="say"> 我爱你,我爱你,我爱你!!!</span><br>
+                        <span class="say"> 真真实实的是我喜欢你,爱你的全部。</span><br>
+                        <span class="say"> 我的心很小,只容的下一个你。</span><br>
                         <span class="say"> </span><br>
-                        <span class="say"></span><br>
-                        <span class="say">酱紫,我们的未来很长...</span><br>
+                        <span class="say"> 酱紫,你是个好菇凉,很好很好。</span><br>
+                        <span class="say"> 我会珍惜,爱护,保护你!</span><br>
+                        <span class="say"> </span><br>
+                        <span class="say">未来的时间很长。</span><br>
                         <span class="say">未来的每一个日出日落。</span><br>
                         <span class="say">我们都将会在一起....</span><br>
                         <span class="say">我们那时或是在异地旅游,或是相守在家乡。</span><br>
                         <span class="say">有你就好。</span><br>
+                        <span class="say">有你真好。</span><br>
                         <span class="say"> </span><br>
-                        <span class="say"><span class="space"></span> -- 小胖子--</span>
+                        <span class="say"><span class="space"></span> --爱你的小胖子--</span>
                     </font>
                 </p>
             </div>
         </div>
         <div id="clock-box">
-            <span class="STYLE1">酱紫,我爱你的:</span>
-            <div id="clock"></div>
+            <span class="STYLE1">酱紫,一生所爱:</span>
+            <div id="clock" ></div>
         </div>
         <canvas id="canvas" width="1100" height="680" ></canvas>
     </div>
@@ -527,19 +530,12 @@
                 $await(Jscex.Async.sleep(1000));
                 tem++;
                 if (tem>20){
-
                     $("#STYLE1").hide;
-
-
-
                 }
-
             }
         }));
 
         var runAsync = eval(Jscex.compile("async", function () {
-
-
             $await(seedAnimate());
             $await(growAnimate());
             $await(flowAnimate());

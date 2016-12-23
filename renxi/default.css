@@ -11,7 +11,7 @@ a {color:#000;font-size:14px;}
 #clock-box {position:absolute;left:60px;top:50px;font-size:28px;display:none;}
 #clock-box a {font-size:34px;text-decoration:none;}
 #clock{margin-left:24px;}
-#clock .digit {font-size:22px;}
+#clock .digit {font-size:22px;color: #ffcd5c }
 #canvas{margin:0 auto;width:1100px;height:680px;}
 #error{margin:0 auto;text-align:center;margin-top:60px;display:none;}
 .hand{cursor:pointer;}
