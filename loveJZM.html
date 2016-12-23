@@ -136,6 +136,34 @@
         -webkit-animation-delay: 5s;
         -moz-animation-delay: 5s;
     }
+    .pink2 {
+        top: 90px;
+        left: 395px;
+        background: #ff5a99;
+        animation-delay: 5s;
+        -webkit-animation-delay: 5s;
+        -moz-animation-delay: 5s;
+    }
+    .pink2:after {
+        border-color: transparent transparent transparent #ff5a99;
+        animation-delay: 5s;
+        -webkit-animation-delay: 5s;
+        -moz-animation-delay: 5s;
+    }
+    .pink3 {
+        top: 60px;
+        left: 395px;
+        background: #ff5a99;
+        animation-delay: 5s;
+        -webkit-animation-delay: 5s;
+        -moz-animation-delay: 5s;
+    }
+    .pink3:after {
+        border-color: transparent transparent transparent #ff5a99;
+        animation-delay: 5s;
+        -webkit-animation-delay: 5s;
+        -moz-animation-delay: 5s;
+    }
     .blue {
         top: 35px;
         left: 432px;
@@ -150,6 +178,22 @@
         -moz-animation-delay: 7s;
         animation-delay: 7s;
     }
+    .blue2 {
+        top: 135px;
+        left: 400px;
+        background: cyan;
+        animation-delay: 7s;
+        -webkit-animation-delay: 7s;
+        -moz-animation-delay: 7s;
+    }
+    .blue2:after {
+        border-color: transpareanimation-delay: 12s;
+        -webkit-animation-delay: 7s;
+        -moz-animation-delay: 7s;
+        animation-delay: 7s;
+    }
+
+
     .yellow {
         top: 50px;
         left: 600px;
@@ -160,6 +204,18 @@
         border-color: transparent transparent transparent #ffcd5c;
         animation-delay: 5.8s;
     }
+    .yellow2 {
+        top: 150px;
+        left: 600px;
+        background: #ffcd5c;
+        animation-delay: 5.1s;
+    }
+    .yellow2:after {
+        border-color: transparent transparent transparent #ffcd5c;
+        animation-delay: 5.1s;
+    }
+
+
     @keyframes star-ani {
         0% {
             opacity: 0;
@@ -262,12 +318,7 @@
 
 
 <div id="main">
-    <div class="redlove">
-        <div class="heart"></div>
-    </div>
-    <div class="redlove2">
-        <div class="heart2"></div>
-    </div>
+
     <div class="cube skybox">
     <var class="scale">
     <figure class="face front"></figure>
@@ -291,6 +342,22 @@
             <div class="star yellow"></div>
         </div>
     </var>
+    </div>
+    <div class="redlove">
+        <div class="heart"></div>
+    </div>
+    <div class="redlove2">
+        <div class="heart2"></div>
+    </div>
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star pink"></div>
+        <div class="star pink2"></div>
+        <div class="star pink3"></div>
+        <div class="star blue"></div>
+        <div class="star blue2"></div>
+        <div class="star yellow"></div>
+        <div class="star yellow2"></div>
     </div>
     <div class="butterfly_container">
         <var class="rotate3d">
@@ -353,11 +420,13 @@
                     <font color="#00CED1">
                         <span class="say">酱紫,媳妇,小可爱,我爱你!</span><br>
                         <span class="say"> </span><br>
-                        <span class="say"> 真真实实的是我喜欢你,爱你的全部。</span><br>
                         <span class="say"> 我的心很小,只容的下一个你。</span><br>
+                        <span class="say"> 我喜欢你,爱你,我要你的全部。</span><br>
+                        <span class="say"> 你的优点,在我眼里是亮点,</span><br>
+                        <span class="say"> 偶尔有点瑕疵,是你的发光点...</span><br>
                         <span class="say"> </span><br>
                         <span class="say"> 酱紫,你是个好菇凉,很好很好。</span><br>
-                        <span class="say"> 我会珍惜,爱护,保护你!</span><br>
+                        <span class="say"> 我会永远珍惜,爱护,保护你!</span><br>
                         <span class="say"> </span><br>
                         <span class="say">未来的时间很长。</span><br>
                         <span class="say">未来的每一个日出日落。</span><br>
@@ -494,10 +563,10 @@
             tree.snapshot("p2", 500, 0, 610, 680);
 
             // 会有闪烁不得意这样做, (＞﹏＜)
-            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+            canvas.parent().css("background", "url(" + tree.toDataURL('img/background.jpg') + ")");
 //            canvas.parent().css("background", "#666666");
 
-            canvas.css("background", "#666666");
+//            canvas.css("background", "#666666");
             $await(Jscex.Async.sleep(300));
             canvas.css("background", "none");
         }));
